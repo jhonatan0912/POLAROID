@@ -1,0 +1,60 @@
+---
+import Card from "./Card.astro";
+---
+
+<style>
+  main {
+    background-color: #f8f8f8;
+  }
+</style>
+
+<main class="p-24 w-screen h-screen flex flex-col gap-10">
+  <section class="grid grid-cols-2">
+    <div class="firs-col flex flex-col gap-8">
+      <section class="flex flex-col gap-5">
+        <h1 class="font-bold text-5xl">Design products</h1>
+        <p class="font-semibold text-5xl ml-10">Deliver experience</p>
+      </section>
+
+      <article
+        class="border-l-4 border-l-black pl-4 w-10/12 flex flex-col gap-3"
+      >
+        <p class="font-semibold">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis qui
+          velit obcaecati eum commodi ab dolor voluptate neque, expedita sint
+          iste, nam nisi ipsam hic culpa nulla cupiditate voluptatibus, fugit
+          cum in! Vitae, doloremque assumenda nemo saepe minima magni, obcaecati
+          quod, ab optio deleniti aperiam natus earum placeat aliquam incidunt?
+        </p>
+        <a
+          href="#"
+          class="bg-black text-white p-3 px-10 rounded-full block max-w-fit hover:scale-105"
+          >Get started</a
+        >
+      </article>
+    </div>
+    <div class="sec-col relative">
+      <img class="absolute right-60 -top-20" src="circle-logo.png" alt="circle-logo" />
+      <img src="hero-image.png" alt="hero-image" />
+    </div>
+  </section>
+
+  <div class="cards-container grid grid-cols-4">
+    <Card
+      title="Title 1"
+      paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, deserunt laudantium quod, impedit obcaecati sint quo aliquid in eum atque libero, aperiam a odio ipsam?"
+    />
+    <Card
+      title="Title 2"
+      paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, deserunt laudantium quod, impedit obcaecati sint quo aliquid in eum atque libero, aperiam a odio ipsam?"
+    />
+    <Card
+      title="Title 3"
+      paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, deserunt laudantium quod, impedit obcaecati sint quo aliquid in eum atque libero, aperiam a odio ipsam?"
+    />
+    <Card
+      title="Title 4"
+      paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, deserunt laudantium quod, impedit obcaecati sint quo aliquid in eum atque libero, aperiam a odio ipsam?"
+    />
+  </div>
+</main>

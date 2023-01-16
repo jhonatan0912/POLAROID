@@ -1,0 +1,21 @@
+---
+interface Card {
+  title: String;
+  paragraph: String;
+}
+
+const { title, paragraph } = Astro.props;
+---
+
+<style>
+  .card {
+    background-color: #fff;
+  }
+  .card:nth-child(even) {
+    background-color: #e2e7f1;
+  }
+</style>
+<div class="card flex flex-col gap-3 px-5 py-10">
+  <h2 class="font-bold text-lg">{title}</h2>
+  <p class="font-mono">{paragraph}</p>
+</div>
